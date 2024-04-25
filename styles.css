@@ -78,3 +78,19 @@ p {
 .btn-jogar-novamente:hover{
     cursor: pointer;
 }
+
+.div-game-over{
+    height: 100vh;
+    width: 100vw;
+    background-color:#97E7E1;
+    color: #7AA2E3;
+}
+
+.div-game-over-conteudo{
+    margin-top: 8em;
+}
+
+.game-over-titulo{
+    margin-top: 1em;
+    color: red;
+}

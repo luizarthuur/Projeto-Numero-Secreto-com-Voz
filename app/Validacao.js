@@ -36,7 +36,22 @@ function verificaValorValido (chute) {
 }
 
 function chuteForInvalido (numero) {
+    if (chute == 'game over' || chute == 'Game Over' || chute == 'GAME OVER') {
+        document.body.innerHTML = `
+        <div class= "div-game-over">
+        <div class = "div-game-over-conteudo">
+            <h2> Você usou a frase chave e decidiu parar de jogar!!!! </h2>
+            <br>
+            <br>
+            <p> O número secreto era ${numeroSecreto}!</p>
+            <button id="jogar-novamente" class="btn-jogar-novamente">Jogar Novamente</button>
+            
+        </div>
+        </div>`
+    }
+    else{
     return Number.isNaN(numero)
+}
 }
 
 function numeroMaiorOuMenorQueOPermitido(numero) {
